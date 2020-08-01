@@ -1,13 +1,11 @@
 body {
   width: 100%;
   height: 100%;
-  font-family: Montserrat;
+  font-family: 'Montserrat';
   font-style: normal;
   color: #000;
   margin: 0;
 }
-
-/* header*/
 
 .header {
   max-width: 100%;
@@ -54,7 +52,7 @@ body {
 }
 
 .header__link:hover {
-  color: #E51937;
+  color: #e51937;
 }
 
 .header__link_active {
@@ -62,7 +60,7 @@ body {
   position: relative;
 }
 
-.header__link_active:after {
+.header__link_active::after {
   content: '';
   display: block;
   position: absolute;
@@ -72,8 +70,6 @@ body {
   height: 2px;
   margin-top: 8px;
 }
-
-/* section 1 */
 
 .intro {
   height: 760px;
@@ -114,7 +110,9 @@ body {
   margin: 0 321px 37px 321px;
 }
 
-.intro-info__inner, .intro-info__feature, .feature {
+.intro-info__inner,
+.intro-info__feature,
+.feature {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -147,8 +145,6 @@ body {
 
 .icon01 {
   background: url(../img/icon01.svg) center top no-repeat;
-  /* background-repeat: no-repeat;
-  background-position: center top; */
   margin-right: 14px;
   width: 46px;
   height: 34px;
@@ -184,10 +180,10 @@ body {
 .btn {
   width: 160px;
   height: 40px;
-  border: 2px solid #E51937;
-  color: #E51937;
+  border: 2px solid #e51937;
+  color: #e51937;
   background: #fff;
-  font-family: montserrat;
+  font-family: 'Montserrat';
   font-weight: bold;
   font-size: 13px;
   line-height: 16px;
@@ -196,15 +192,13 @@ body {
 }
 
 .btn:hover {
-  background-color: #E51937;
+  background-color: #e51937;
   color: #fff;
 }
 
 .intro-arrow {
   text-align: center;
 }
-
-/* ***section 2*** */
 
 .about__wrapper {
   height: 900px;
@@ -226,6 +220,7 @@ body {
   left: 80px;
   top: 0;
   margin: 30px 0;
+  width: 300px;
 }
 
 .box {
@@ -233,7 +228,7 @@ body {
   height: 900px;
   top: 0;
   right: 0;
-  background: #E51937;
+  background: #e51937;
   color: #fff;
   position: absolute;
 }
@@ -343,8 +338,6 @@ body {
   background: #fff;
 }
 
-/* media for section 3 */
-
 .review__wrapper {
   height: 900px;
   position: relative;
@@ -393,7 +386,8 @@ body {
   margin-bottom: 26px;
 }
 
-.score, .review-security {
+.score,
+.review-security {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -407,7 +401,7 @@ body {
   text-transform: uppercase;
 }
 
-li > span {
+.score__list span {
   font-weight: bold;
   font-size: 10px;
   line-height: 12px;
@@ -461,11 +455,7 @@ ul {
   margin-bottom: 12px;
 }
 
-
-@media (max-width:1024px) {
-
-  /* media for header */
-
+@media (max-width: 1024px) {
   .header {
     margin: 24px 33px 85px 15px;
   }
@@ -474,7 +464,8 @@ ul {
     justify-content: space-around;
   }
 
-  .header__link, .header__link_active {
+  .header__link,
+  .header__link_active {
     display: none;
   }
 
@@ -490,8 +481,6 @@ ul {
   .burger {
     width: 100%;
   }
-
-  /* media for section 1 */
 
   .intro {
     height: 865px;
@@ -581,8 +570,6 @@ ul {
     line-height: 20px;
   }
 
-  /* media for section 2 */
-
   .about__wrapper {
     height: 1024px;
   }
@@ -598,16 +585,13 @@ ul {
   }
 
   .box {
-    /* width: 768px; */
     height: 488px;
-    width: 1024px;
-    max-width: 100%;
+    width: 100%;
     left: 0;
     top: 500px;
   }
 
   .box-right__inner {
-    /* margin: 55px 80px 0 34px; */
     width: 700px;
     display: flex;
     justify-content: space-between;
@@ -622,7 +606,6 @@ ul {
   .text {
     width: 300px;
     margin-right: 115px;
-    /* margin-bottom: 55px; */
   }
 
   .about-info {
@@ -670,8 +653,6 @@ ul {
     line-height: 20px;
   }
 
-  /* section 3 */
-
   .review__wrapper {
     height: 1024px;
   }
@@ -694,7 +675,6 @@ ul {
   }
 
   .box-left__inner {
-    /* margin: 63px 55px 0 34px; */
     width: 700px;
     display: flex;
     justify-content: space-between;
@@ -718,9 +698,7 @@ ul {
   }
 }
 
-@media (max-width:660px) {
-  /* media for header */
-
+@media (max-width: 640px) {
   .body {
     height: 1861px;
   }
@@ -742,8 +720,6 @@ ul {
     width: 24px;
     height: 15px;
   }
-
-  /* media for section 1 */
 
   .intro {
     height: 500px;
@@ -826,8 +802,6 @@ ul {
     line-height: 16px;
   }
 
-  /* media for section 2 */
-
   .about__wrapper {
     height: 620px;
   }
@@ -862,8 +836,6 @@ ul {
     display: none;
   }
 
-  /* section 3 */
-
   .review__wrapper {
     height: 550px;
   }
@@ -893,5 +865,4 @@ ul {
   .review-score {
     display: none;
   }
-
 }
