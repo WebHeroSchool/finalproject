@@ -56,7 +56,7 @@ body {
 }
 
 .header__link_active {
-  color: #E51937;
+  color: #e51937;
   position: relative;
 }
 
@@ -152,8 +152,6 @@ body {
 
 .icon02 {
   background: url(../img/icon02.svg) center top no-repeat;
-  /* background-repeat: no-repeat;
-  background-position: center top; */
   width: 33px;
   height: 50px;
   margin-right: 11px;
@@ -330,7 +328,7 @@ body {
 .btn-white {
   border-color: #fff;
   color: #fff;
-  background: #E51937;
+  background: #e51937;
 }
 
 .btn-white:hover {
